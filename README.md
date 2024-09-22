@@ -62,11 +62,25 @@
 
 
       * Setter Method DI :-
-          1. Dependencies are injected into a class through setter methods
+          1. Dependencies are injected into a class through setter methods.
           2. Setter Method DI is more readable
           3. Setter Method DI is more flexible
       * Constructor DI :-
           1. Dependencies are injected into a class through constructor
           2. Constructor DI is less readable
           3. Constructor DI is less flexible
+  # AUTOWIRING : 
+         1. It is a feature of Spring Framework used to achieve DI automatically.
+         2. It can be achieved by : 
+                  * Annotation - @autowired and @Qualifier(check which obj has to inject)
+                  * XML File - autowire attribute and mode - byName , byType , Constructor
+		                  * Note: autowire-candidate=false(obj not involve in autowiring)
 
+               		    	AUTO         			                WIRING
+               		Automatically manage the				  Linking those objects
+               		Connection b/w objects	  				  to fulfill dependencies
+
+         3. Advantage : 
+            * It requires less code
+         4. Dis advantage : 
+            * It can be achieved only on non-primitive or user-defined data types (excluding String), not on primitive data types.
