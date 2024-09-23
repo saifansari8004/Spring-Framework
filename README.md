@@ -107,3 +107,44 @@
 		* If there is multiple object and have to inject one object use autowire-candidate attribute to simplify which object want to inject
 
 
+ # Introduction to Maven :
+
+	1. It is a build tool which automates everything related to the build of a project (JAVA project).
+	2. MAVEN in was developed by JASON VAN ZYL 2004 (Apache software foundation)
+	3. Building tools- Process → 	1) Clean
+					2) Compile
+					3) Test
+					4) Package
+					5) initialize /install
+					6) Deploy
+
+	In the context of Java projects, "building" refers to the "process of transforming source code into a deployable form, typically an executable or distributable 	artifact". It contains below phases :-
+
+		* Clean: Removes any previously generated build artifacts, ensuring a fresh start.
+		* Compile: Translates the source code files (Java files) into bytecode, which is the language understood by the Java Virtual Machine (JVM).
+		* Test: Executes automated tests to verify that the code behaves as expected and meets specified requirements.
+		* Package: Combines the compiled classes, along with any required resources (such as configuration files or static assets), into a distributable unit.Common types of packages include JAR (Java ARchive) files for libraries and WAR (Web ARchive) files for web applications.
+		* Install: Installs the packaged artifacts into a local repository, making them available for use by other projects on the same machine.
+		* Deploy: Transfers the packaged artifacts to a remote environment, such as a server or a production environment, for deployment and execution.
+
+
+	Responsibilities of Maven :
+		1. Creates the project structure
+		2. Download the required Dependencies
+		3. Prepare the documentation
+		4. Compile the source code
+		5. Start of Stop the server
+		6. Packaging the project in JAR or WAR OF EAR file
+	
+
+	First program of Maven :
+		* Create maven project
+		* Create archetype-quickstart project
+		* Provide ID and name of project
+		* Paste spring-context dependency in pom.xml file in dependency tag
+		* Create bean classes with Getter and Setter and other properties
+		* Create xml file / Java file for Configuration
+		* Update the main and create an object to fetch your result
+
+
+
