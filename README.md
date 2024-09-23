@@ -84,3 +84,26 @@
             * It requires less code
          4. Dis advantage : 
             * It can be achieved only on non-primitive or user-defined data types (excluding String), not on primitive data types.
+
+
+
+
+	# Autowiring using Annotation : 
+		* Create POJO classes i.e student and address
+		* Create JavaConfig.class file use @Configuration to configure and @Bean to create POJO objects.
+		* Direct use @Autowired annotation with property to inject dependencies one to another.
+		* Create Main class and create a applicationcontext obj with annotation*** class.
+		* If there is multiple object and have to inject one object use @Qualifier annotation to simplify which object want to inject. E.g @Qualifier(“createobj”)
+	
+	# Autowiring using XML file: 
+		* Create POJO classes i.e student and address.
+		* Create XML config file.
+		* Create object using <bean> tag with attribute class , id , autowire
+		* Autowire mode :- 
+			* byName - property , name , value 
+			* byType - property , name , value
+			* constructor - constructor-arg , value ,  index
+		* Create Main class and create a applicationcontext obj with ClassPath*** class.
+		* If there is multiple object and have to inject one object use autowire-candidate attribute to simplify which object want to inject
+
+
