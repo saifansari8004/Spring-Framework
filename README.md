@@ -20,7 +20,7 @@
     * Application Context (new)
           (Note: They are used to invoke and start the Spring Container)
   Note:
-    # Bean :
+# Bean :
     1. Standard class
          * Private properties
          * Getters and Setters
@@ -36,7 +36,7 @@
     3. Create Main Class
     (Note: - Follow Programs to understand)
 
-    # Configuration :
+# Configuration :
     1. XML File Config :
         1. In XML-based Spring configuration, we use <bean> tags to define beans.
         2. ClassPathXmlApplicationContext (used for XML configurations)
